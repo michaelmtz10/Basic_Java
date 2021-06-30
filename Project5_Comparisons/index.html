@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script src="js/main.js"></script>
+
+<p id="test"></p>
+<p id="test2"></p>
+
+<!---finding type using syntax-->
+<script>
+    document.write(typeof 87);
+
+    document.getElementById("test").innerHTML = isNaN('this is a string');
+
+    document.getElementById("test2").innerHTML = isNaN(3);
+
+    document.write(2E322);
+
+    document.write(-3E312);
+</script>
+<!---using boolean-->
+<script>
+    document.write(12 > 5);
+    document.write(13 < 3);
+</script>
+<!---utilizing console to display outcome-->
+<script>
+    console.log(4 + 5);
+    console.log(4 > 8);
+</script>
+<!--- finding boolean via ==  ---->
+<script>
+    document.write((13+7) == 20);
+    document.write((21-7) == 18);
+</script>
+<script>
+    x = 43;
+    y = 43;
+    document.write(x===y);
+    a = 21;
+    b = "twenty-one"
+    document.write(a===b);
+    document.write(06/20/1999 === 06/20/1998);
+</script>
+<!-- finding booelan with and & or -->
+<script>
+    document.write(5 > 2 && 10 > 5);
+    document.write(5 > 2 && 7 > 11);
+    document.write(5 > 3 || 4 == 4);
+    document.write(4 == 2 || 6 > 12);
+</script>
+<p id="position" onclick="not_function()"></p>
+    <!--- using the not in boolean -->
+<script>
+    function not_function(){
+        document.getElementById("position").innerHTML = !(15 == 15);
+    }
+</script>
+</body>
+</html>

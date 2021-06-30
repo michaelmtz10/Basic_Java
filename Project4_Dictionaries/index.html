@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+</head>
+
+<body>
+<script src="./js/main4.js"></script>
+
+<p id="dictionary"></p>
+
+<script>
+
+var my_car = {
+  color: "black",
+  interior: "grey leather",
+  year: 2017,
+  engine: "automatic",
+  trait: "accelerates"
+};
+
+document.getElementById("dictionary").innerHTML = my_car.engine;
+</script>
+
+<p id="dictionary"></p>
+<script>
+
+var my_car = {
+  color: "black",
+  interior: "grey leather",
+  year: 2017,
+  engine: "automatic",
+  trait: "accelerates"   
+};
+delete my_car.engine;
+document.getElementById("dictionary").innerHTML;
+</script>
+
+</body>
+</html>

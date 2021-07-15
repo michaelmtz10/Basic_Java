@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./Portfolio_2.0.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="topnav" id="mytop">
+        <a href="#home">Home</a>
+        <a href="#SlideShow">SlideShow</a>
+        <a href="#Github">Github</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+                <!--------Video------------>
+        <video autoplay muted loop id="myVideo">
+            <source src="./img/Laptop_Vid.mp4" type="video/mp4">
+        </video>
+
+                <!-----Slideshow------>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="./img/team.jpg" style="width:100%">
+    <div class="text">Here to help you obtain your software demands.</div>
+    </div>
+    
+    <div class="mySlides fade">
+    <img src="./img/html_css_js.jpeg" style="width:100%">
+    <div class="text">Full stack developer, skilled in HTML,CSS,Javascript</div>
+    </div>
+    
+    <div class="mySlides fade">
+    <img src="./img/python.jpg" style="width:100%">
+    <div class="text">as well as the language, Python.</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+</div>
+    <br>
+    
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!-----Slideshow End------>
+
+<span id="About">
+    <div class="container">
+            <div class="box">
+                <div class="icon"><i class="fa fa-keyboard" aria-hidden="true"></i></div>
+                <div class="content">
+                    <h3>About me</h3>
+                    <p>A young ambitious software developer who is determined to create optimal software for client demands.</p>
+                </div>
+    </div>
+    </span>
+    <span id="Github">
+    <div class="box">
+        <div class="icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+        <div class="content">
+            <h3 id="#Github">Github</h3>
+            <p><a href="https://github.com/michaelmtz10">https://github.com/michaelmtz10</a></p>
+        </div>  
+    </div>
+    </span>
+    <span id="Contact">
+    <div class="box">
+        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div class="content">
+            <button onclick="document.getElementById('forms').style.display='block'" style="width:auto;">Sign Up</button>
+        </div>
+        <div id="forms" class="modal">
+            <span onclick="document.getElementById('forms').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container1">
+                <h1>Contact</h1>
+                <p>Send me an email, to get in contact!</p>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('forms').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Contact me</button>
+    </div>
+    </span>
+<script src="./Portfolio_js.js"></script>
+</body>
+</html>

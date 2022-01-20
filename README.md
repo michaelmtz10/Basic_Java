@@ -1,4 +1,5 @@
-# Basic_Java
+# Basic_JavaScript
+
  Java Assignments
 
 A folder with a few projects I made utilizing Javascript
